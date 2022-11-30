@@ -75,6 +75,7 @@ export const ProfileProvider = ({ children }) => {
               );
             }
           } catch (err) {
+            // eslint-disable-next-line no-console
             console.log('An error occurred while retrieving token. ', err);
           }
         }
@@ -110,6 +111,7 @@ export const ProfileProvider = ({ children }) => {
   }, []);
 
   return (
+    // eslint-disable-next-line react/jsx-no-constructed-context-values
     <ProfileContext.Provider value={{ isLoading, profile }}>
       {children}
     </ProfileContext.Provider>
