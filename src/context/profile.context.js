@@ -9,7 +9,7 @@ import {
 } from 'firebase/database';
 import { getToken } from 'firebase/messaging';
 import { onAuthStateChanged } from 'firebase/auth';
-import { auth, database, fcmVapidKey, messaging } from '../misc/firebase';
+import { auth, database,  messaging } from '../misc/firebase';
 
 export const isOfflineForDatabase = {
   state: 'offline',
@@ -66,7 +66,7 @@ export const ProfileProvider = ({ children }) => {
         if (messaging) {
           try {
             const currentToken = await getToken(messaging, {
-              vapidKey: fcmVapidKey,
+            
             });
             if (currentToken) {
               await set(
