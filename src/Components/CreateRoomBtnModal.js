@@ -11,8 +11,8 @@ import {
   Alert,
 } from 'rsuite';
 import { serverTimestamp, ref, push } from 'firebase/database';
-import { useModalState } from '../../misc/custom-hooks';
-import { database, auth } from '../../misc/firebase';
+import { useModalState } from '../misc/custom-hooks';
+import { database, auth } from '../misc/firebase';
 
 const { StringType } = Schema.Types;
 

@@ -19,6 +19,9 @@ const config = {
     appId: "1:414075034452:web:9565ea2105abbf682086c1"
   };
 
+  export const fcmVapidKey =
+  'BGwDopFGTrAxoHxxAmN7viy0Z003CkmN5Huvnx08RJAxnXbreg2LBT4pAg4OVE73W5s_l02di5gZwePdNoKqaaU';
+
 
 const app = initializeApp(config);
 export const auth = getAuth(app);
