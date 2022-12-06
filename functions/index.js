@@ -10,9 +10,6 @@ admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: "https://chat-web-app-d4c52-default-rtdb.asia-southeast1.firebasedatabase.app",
 });
-const sendFcm = require("./src/fcm");
+const { sendFcm } = require('./src/fcm');
 
 exports.sendFcm = sendFcm;
-
-
-// exports.sendFcm =

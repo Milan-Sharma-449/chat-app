@@ -1,0 +1,124 @@
+[debug] [2022-12-02T16:48:05.300Z] ----------------------------------------------------------------------
+[debug] [2022-12-02T16:48:05.302Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\milan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2022-12-02T16:48:05.303Z] CLI Version:   11.16.1
+[debug] [2022-12-02T16:48:05.303Z] Platform:      win32
+[debug] [2022-12-02T16:48:05.303Z] Node Version:  v18.12.1
+[debug] [2022-12-02T16:48:05.304Z] Time:          Fri Dec 02 2022 22:18:05 GMT+0530 (India Standard Time)
+[debug] [2022-12-02T16:48:05.304Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-02T16:48:05.467Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-02T16:48:05.468Z] > authorizing via signed-in user (milansharma449@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2022-12-02T16:48:05.479Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-02T16:48:05.486Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2022-12-02T16:48:05.498Z] [hub] writing locator at C:\Users\milan\AppData\Local\Temp\hub-chat-web-app-d4c52.json
+[debug] [2022-12-02T16:48:05.521Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-02T16:48:05.521Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-02T16:48:05.522Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[warn] !  Your requested "node" version "10" doesn't match your global version "18". Using node@18 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"10\" doesn't match your global version \"18\". Using node@18 from host."}}
+[debug] [2022-12-02T16:48:05.549Z] defaultcredentials: writing to file C:\Users\milan\AppData\Roaming\firebase\milansharma449_gmail_com_application_default_credentials.json
+[debug] [2022-12-02T16:48:05.554Z] Setting GAC to C:\Users\milan\AppData\Roaming\firebase\milansharma449_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\milan\\AppData\\Roaming\\firebase\\milansharma449_gmail_com_application_default_credentials.json"}}
+[debug] [2022-12-02T16:48:05.555Z] > refreshing access token with scopes: []
+[debug] [2022-12-02T16:48:05.557Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-12-02T16:48:05.557Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-02T16:48:05.862Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-12-02T16:48:05.863Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-02T16:48:05.870Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chat-web-app-d4c52/adminSdkConfig [none]
+[debug] [2022-12-02T16:48:06.420Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chat-web-app-d4c52/adminSdkConfig 200
+[debug] [2022-12-02T16:48:06.420Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chat-web-app-d4c52/adminSdkConfig {"projectId":"chat-web-app-d4c52","databaseURL":"https://chat-web-app-d4c52-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"chat-web-app-d4c52.appspot.com","locationId":"asia-south1"}
+[debug] [2022-12-02T16:48:06.449Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-12-02T16:48:06.449Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-12-02T16:48:06.449Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\milan\\.cache\\firebase\\emulators\\ui-v1.11.1\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\milan\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.1\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-12-02T16:48:06.611Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2022-12-02T16:48:06.611Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "F:\Projects\New\.vscode\React\chat-app\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"F:\\Projects\\New\\.vscode\\React\\chat-app\\functions\" for Cloud Functions..."}}
+[debug] [2022-12-02T16:48:06.719Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-12-02T16:48:10.937Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run serve",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "10"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-12-02T16:48:10.938Z] Building nodejs source
+[debug] [2022-12-02T16:48:10.938Z] Analyzing nodejs backend spec
+[debug] [2022-12-02T16:48:10.939Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-12-02T16:48:11.221Z] Serving at port 9005
+
+[debug] [2022-12-02T16:48:11.754Z] Got response from /__/functions.yaml {"endpoints":{"sendFcm-sendFcm":{"platform":"gcfv1","labels":{},"region":["asia-south1"],"callableTrigger":{},"entryPoint":"sendFcm.sendFcm"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-12-02T16:48:11.760Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: sendFcm.sendFcm. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: sendFcm.sendFcm."}}
+[info] +  functions[asia-south1-sendFcm-sendFcm]: http function initialized (http://127.0.0.1:5001/chat-web-app-d4c52/asia-south1/sendFcm-sendFcm). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/chat-web-app-d4c52/asia-south1/sendFcm-sendFcm)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-12-02T16:50:45.593Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-02T16:50:45.593Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-02T16:50:45.596Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-12-02T16:52:49.619Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-02T16:52:49.619Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-02T16:52:49.620Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-12-02T16:54:11.692Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-02T16:54:11.692Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-02T16:54:11.692Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-12-02T17:01:07.519Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-02T17:01:07.519Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-02T17:01:07.519Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-12-02T17:01:21.799Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-02T17:01:21.799Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-02T17:01:21.799Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-12-02T17:03:09.605Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-02T17:03:09.605Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-02T17:03:09.606Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-12-02T17:10:59.652Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-02T17:10:59.653Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-02T17:10:59.653Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-12-02T17:35:11.610Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-02T17:35:11.610Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-02T17:35:11.611Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-12-02T17:35:28.999Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-02T17:35:28.999Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-02T17:35:29.000Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-12-02T17:40:49.139Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-02T17:40:49.139Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-02T17:40:49.141Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-12-03T04:56:38.935Z] Received signal SIGHUP 1
