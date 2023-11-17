@@ -3,6 +3,7 @@ import { Tag, Icon, Button, Alert } from 'rsuite';
 import {
   FacebookAuthProvider,
   GoogleAuthProvider,
+  GithubAuthProvider,
   linkWithPopup,
   unlink,
 } from 'firebase/auth';
@@ -15,6 +16,9 @@ const ProviderBlock = () => {
     ),
     'facebook.com': auth.currentUser?.providerData?.some(
       data => data.providerId === 'facebook.com'
+    ),
+    'github.com': auth.currentUser?.providerData?.some(
+      data => data.providerId === 'github.com'
     ),
   });
 
@@ -47,6 +51,9 @@ const ProviderBlock = () => {
   const unlinkGoogle = () => {
     unlinkProvider('google.com');
   };
+  const unlinkGithub = () => {
+    unlinkProvider('github.com');
+  };
 
   const linkProvider = async provider => {
     try {
@@ -64,6 +71,9 @@ const ProviderBlock = () => {
   const linkGoogle = () => {
     linkProvider(new GoogleAuthProvider());
   };
+  const linkGithub = () => {
+    linkProvider(new GithubAuthProvider());
+  };
 
   return (
     <div>
@@ -77,6 +87,11 @@ const ProviderBlock = () => {
           <Icon icon="facebook" /> Connected
         </Tag>
       )}
+      {isConnected['github.com'] && (
+        <Tag color="blue" closable onClose={unlinkGithub}>
+          <Icon icon="github" /> Connected
+        </Tag>
+      )}
 
       <div className="mt-2">
         {!isConnected['google.com'] && (
@@ -88,6 +103,12 @@ const ProviderBlock = () => {
         {!isConnected['facebook.com'] && (
           <Button block color="blue" onClick={linkFacebook}>
             <Icon icon="facebook" /> Link to Facebook
+          </Button>
+        )}
+
+        {!isConnected['github.com'] && (
+          <Button block color="green" onClick={linkGithub}>
+            <Icon icon="github" /> Link to Github
           </Button>
         )}
       </div>
