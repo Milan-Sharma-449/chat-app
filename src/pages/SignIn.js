@@ -2,12 +2,15 @@ import React from 'react';
 import {
   GoogleAuthProvider,
   FacebookAuthProvider,
+  GithubAuthProvider,
   signInWithPopup,
   getAdditionalUserInfo,
 } from 'firebase/auth';
 import { Container, Grid, Row, Panel, Col, Button, Icon, Alert } from 'rsuite';
 import { ref, serverTimestamp, set } from 'firebase/database';
 import { auth, database } from '../misc/firebase';
+import '../styles/utility.scss';
+
 
 const SignIn = () => {
   const signInWithProvider = async provider => {
@@ -36,8 +39,13 @@ const SignIn = () => {
     signInWithProvider(new GoogleAuthProvider());
   };
 
+  const onGithubSignIn = () => {
+    signInWithProvider(new GithubAuthProvider());
+  };
+
+
   return (
-    <Container>
+    <Container className='container' >
       <Grid className="mt-page">
         <Row>
           <Col xs={24} md={12} mdOffset={6}>
@@ -54,6 +62,10 @@ const SignIn = () => {
 
                 <Button block color="green" onClick={onGoogleSignIn}>
                   <Icon icon="google" /> Continue with Google
+                </Button>
+                <h4 className='text-center mt-3 mb-2' >OR<br/>Continue with</h4>
+                <Button block color="green" onClick={onGithubSignIn}>
+                  <Icon icon="github" /> Github
                 </Button>
               </div>
             </Panel>
