@@ -5,6 +5,7 @@ import { useParams } from 'react-router';
 import { useCurrentRoom } from '../../../context/current-room.context';
 import { useModalState } from '../../../misc/custom-hooks';
 import { database, auth } from '../../../misc/firebase';
+import '../../../styles/main.scss'
 
 const AskFcmBtnModal = () => {
   const { chatId } = useParams();
